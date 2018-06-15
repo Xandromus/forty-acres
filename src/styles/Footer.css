@@ -1,0 +1,34 @@
+/* FOOTER */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    clear: both;
+    text-align: center;
+    color: white;
+    background-color: blueviolet;
+}
+
+footer p {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+/* MEDIA QUERIES */
+
+/* 385px */
+
+@media screen and (max-width: 385px) {
+    footer p {
+        font-size: 1.2rem;
+    }
+}
