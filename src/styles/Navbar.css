@@ -1,3 +1,32 @@
+.navbar {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+    height: 60px;
+}
+
+.navbar-collapse,
+.navbar-nav {
+    height: 60px;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background-color: #b66612;
+}
+
 .nav-link {
-    color: white!important;
+    color: #f2f7f2!important;
+}
+
+.active {
+    background-color: #b66612;
+}
+
+#brand-logo {
+    max-height: 40px;
+    margin: auto 0;
+    fill: #f2f7f2;
 }

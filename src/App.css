@@ -25,5 +25,18 @@ body {
   height: 100%;
   position: relative;
   font-family: 'Josefin Sans', sans-serif;
-  color: white;
+  color: #f2f7f2;
+}
+
+/* ANIMATIONS */
+
+/* FADE IN */
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }

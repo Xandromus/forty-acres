@@ -10,7 +10,10 @@ footer {
     clear: both;
     text-align: center;
     color: white;
-    background-color: #4b0082;
+    background-color: #3c787e;
+    animation: fadeIn 1s ease-in-out 0.25s;
+    transition: all .3s ease-in-out;
+    animation-fill-mode: backwards;
 }
 
 footer p {

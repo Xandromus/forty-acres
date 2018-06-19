@@ -1,0 +1,82 @@
+.card {
+    width: 18rem;
+    margin: 50px 3%;
+    display: flex;
+    color: #b66612;
+    border: none;
+}
+
+.card-body {
+    animation: fadeIn 1s ease-in-out;
+    transition: all .3s ease-in-out;
+    animation-fill-mode: backwards;
+    text-shadow: 2px 2px 1px rgba(0,0,0,.1);
+}
+
+/* ANIMATION TIMING */
+
+#card01 {
+    animation-delay: 1s;
+}
+
+#card02 {
+    animation-delay: 1.5s;
+}
+
+#card03 {
+    animation-delay: 2s;
+}
+
+/* .card-img-top {
+    width: 100%;
+    height: 10vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.card-body i {
+    font-size: 48px;
+}
+
+.card-body {
+    width: 100%;
+    /* height: 15vw; */
+    /* min-height: 200px; */
+    /* object-fit: cover; */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.card-body .btn {
+    background-color: #3c787e;
+    border: 1px solid #3c787e;
+}
+
+.card-body .btn:hover {
+    background-color: #b66612;
+    border: 1px solid #b66612;
+    box-shadow: none;
+}
+
+.card-body .btn:active,
+.card-body .btn:focus,
+.card-body .btn:not(:disabled):not(.disabled).active:focus,
+.card-body .btn:not(:disabled):not(.disabled):active:focus,
+.show>.card-body .btn.dropdown-toggle:focus {
+    background-color: #3c787e;
+    border: 1px solid #3c787e;
+    box-shadow: none;
+}
+
+#card-holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+}
