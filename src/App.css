@@ -1,4 +1,6 @@
-* ROOT AND APP STYLES */
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
+/* ROOT AND APP STYLES */
 
 #root {
   height: 100%;
@@ -22,4 +24,6 @@ html {
 body {
   height: 100%;
   position: relative;
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
 }

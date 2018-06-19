@@ -3,7 +3,6 @@
 .main {
     margin-bottom: 50px;
     position: relative;
-    background-color: green;
 }
 
 
@@ -13,5 +12,8 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    background-color: blue;
+}
+
+#brand-logo {
+    max-width: 800px;
 }
