@@ -15,7 +15,7 @@ export default class About extends Component {
                 <i className="fa fa-user mb-5"></i>
                 <h5 className="card-title">What We Offer</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
+                <button className="btn btn-primary">Go somewhere</button>
               </div>
             </InfoCard>
             <InfoCard>
@@ -23,7 +23,7 @@ export default class About extends Component {
                 <i className="fa fa-pencil mb-5"></i>
                 <h5 className="card-title">What You Need</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
+                <button className="btn btn-primary">Go somewhere</button>
               </div>
             </InfoCard>
             <InfoCard>
@@ -31,7 +31,7 @@ export default class About extends Component {
                 <i className="fa fa-book mb-5"></i>
                 <h5 className="card-title">Publish Your Book</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
+                <button className="btn btn-primary">Go somewhere</button>
               </div>
             </InfoCard>
           </div>
