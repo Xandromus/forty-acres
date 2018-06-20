@@ -1,0 +1,7 @@
+#splash-logo {
+    max-width: 500px;
+    width: 70vw;
+    animation: fadeIn 1s ease-in-out 0.5s;
+    transition: all .3s ease-in-out;
+    animation-fill-mode: backwards;
+}
