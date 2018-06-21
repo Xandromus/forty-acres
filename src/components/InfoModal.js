@@ -41,12 +41,12 @@ export default class InfoModal extends Component {
           <ModalHeader toggle={this.toggle}>{this.props.modalHeader}</ModalHeader>
           <ModalBody>
             <div className="row">
-              <div className="col-1">
+              <div className="col-1 arrow-holder">
                 {this.renderLeftArrow()}
               </div>
               <div className="col-10" dangerouslySetInnerHTML={{ __html: this.props.modalBody }}>
               </div>
-              <div className="col-1">
+              <div className="col-1 arrow-holder">
                 {this.renderRightArrow()}
               </div>
             </div>
