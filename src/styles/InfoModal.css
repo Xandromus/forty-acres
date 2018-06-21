@@ -1,0 +1,51 @@
+.modal {
+    color: #00120b;
+}
+
+.modal-content {
+    padding: 15px;
+}
+
+.modal-title {
+    font-size: 28px;
+}
+
+.modal-body {
+    font-size: 20px;
+}
+
+.modal-lg {
+    width: 90%;
+    max-width: 1200px;;
+}
+
+.modal .btn {
+    background-color: #3c787e;
+    border: 1px solid #3c787e;
+}
+
+.modal .btn:hover {
+    background-color: #b66612;
+    border: 1px solid #b66612;
+    box-shadow: none;
+}
+
+.modal .btn:active,
+.modal .btn:focus,
+.modal .btn:not(:disabled):not(.disabled).active:focus,
+.modal .btn:not(:disabled):not(.disabled):active:focus,
+.show>.modal .btn.dropdown-toggle:focus {
+    background-color: #3c787e;
+    border: 1px solid #3c787e;
+    box-shadow: none;
+}
+
+.arrow {
+    font-size: 48px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    color: #b66612;
+}

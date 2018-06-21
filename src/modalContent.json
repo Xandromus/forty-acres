@@ -1,0 +1,17 @@
+[
+    {
+      "id": "01",
+      "modalHeader": "What We Offer",
+      "modalBody": "<p>Using a Ricoh Pro 8120Se machine that prints up to 135 pages per minute, we produce paperback books with the following specifications:</p><ul><li>Full-color, full-bleed heavyweight covers</li><li>Sustainably-sourced eucalyptus paper interiors</li><li>Perfect-bound or spiral-bound spines</li><li>International Standard Book Numbers (ISBNs) and Bowker database registration (Optional)</li><li>Tabs, mylar inserts, perforated pages, and more (Available upon request)</li><li>Any trim size between 4 inches and 12 inches</li></ul><p>Whether you need five copies of your book or 500 copies, we can print and bind them efficiently and professionally for easy self-distribution* and sale. Please allow 2-6 weeks for printing depending on the size of your project. Learn more about how to work with us here.</p><p>*Note: Forty Acres Press is a print-on-demand service only, and does not offer marketing, distribution, or fulfillment services.</p><p>Not in Austin? Not a problem. We ship books to all 48 states in the continental U.S.!</p>"
+    },
+    {
+      "id": "02",
+      "modalHeader": "What You Need",
+      "modalBody": "<p>All you need to get started is a Word or PDF document laid out exactly as you would like the text to appear on the printed page. Be sure to include a minimum .5” margin and gutter and a page size that reflects the final trim size. If you are not sure how to do this, we recommend hiring a professional book editor and/or layout specialist, and we are happy to recommend some in the Austin area.</p><p>You may supply your own book cover art, or work with a Forty Acres Press staff member to design a simple cover including your name, the book’s title, and ISBN if applicable.</p>"
+    },
+    {
+      "id": "03",
+      "modalHeader": "Publish Your Book",
+      "modalBody": "<p>When you’re ready, send us your book file(s) for a custom quote. Let us know how many copies you’d like, and whether you have any special requests. We operate according to an “economy of scale” model—meaning that the more copies of the book you’d like to order, the lower your per-book cost. While every project is different, a typical 180-page black-and-white book with color cover starts at $10.00/book.</p>"
+    }
+  ]
