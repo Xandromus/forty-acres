@@ -28,6 +28,11 @@ body {
   color: #f2f7f2;
 }
 
+h2 {
+  font-size: 24pt;
+  color: #00120b;
+}
+
 /* ANIMATIONS */
 
 /* FADE IN */

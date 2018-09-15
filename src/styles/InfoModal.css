@@ -5,6 +5,11 @@
 .modal-content {
     padding: 15px;
     height: 100%;
+    border: 5px solid #3c787e;
+}
+
+.modal-header {
+    border-bottom: 3px solid #b66612;
 }
 
 .modal-dialog {
@@ -24,9 +29,13 @@
     text-align: left;
 }
 
+.modal-text {
+    overflow: auto;
+}
+
 .modal-lg {
     width: 90%;
-    max-width: 1200px;;
+    max-width: 1200px;
 }
 
 .modal .btn {

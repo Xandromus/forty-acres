@@ -44,7 +44,7 @@ export default class InfoModal extends Component {
               <div className="col-1 arrow-holder">
                 {this.renderLeftArrow()}
               </div>
-              <div className="col-10" dangerouslySetInnerHTML={{ __html: this.props.modalBody }}>
+              <div className="col-10 modal-text" dangerouslySetInnerHTML={{ __html: this.props.modalBody }}>
               </div>
               <div className="col-1 arrow-holder">
                 {this.renderRightArrow()}
