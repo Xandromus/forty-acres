@@ -7,6 +7,7 @@ import Books from "./pages/Books";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import './App.css';
+import Pricing from './pages/Pricing';
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
               <Route exact path="/" component={About} />
               <Route exact path="/about" component={About} />
               <Route exact path="/books" component={Books} />
+              <Route exact path="/pricing" component={Pricing} />
               <Route exact path="/contact" component={Contact} />
               {/* <Route component={NoMatch} /> */}
             </Switch>

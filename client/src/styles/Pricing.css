@@ -1,0 +1,10 @@
+input {
+    max-width: 70px;
+    margin: 10px auto;
+    padding: 10px!important;
+}
+
+label {
+    color: #00120b;
+    margin-right: 10px;
+}
