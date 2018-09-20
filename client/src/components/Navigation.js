@@ -42,6 +42,11 @@ export default class Navigation extends Component {
               : "nav-item"}>
                 <Link to="/books" className="nav-link pt-3">Books</Link>
               </NavItem>
+              <NavItem className={window.location.pathname === "/pricing"
+              ? "nav-item active"
+              : "nav-item"}>
+                <Link to="/pricing" className="nav-link pt-3">Pricing</Link>
+              </NavItem>
               <NavItem className={window.location.pathname === "/contact"
               ? "nav-item active"
               : "nav-item"}>
