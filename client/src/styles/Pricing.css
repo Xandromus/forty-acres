@@ -8,3 +8,25 @@ label {
     color: #00120b;
     margin-right: 10px;
 }
+
+.btn {
+    background-color: #3c787e;
+    border: 1px solid #3c787e;
+    max-width: 150px!important;
+}
+
+.btn:hover {
+    background-color: #b66612;
+    border: 1px solid #b66612;
+    box-shadow: none;
+}
+
+.btn:active,
+.btn:focus,
+.btn:not(:disabled):not(.disabled).active:focus,
+.btn:not(:disabled):not(.disabled):active:focus,
+.show>.btn.dropdown-toggle:focus {
+    background-color: #3c787e;
+    border: 1px solid #3c787e;
+    box-shadow: none;
+}
