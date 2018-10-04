@@ -46,10 +46,21 @@ export default class Pricing extends Component {
 
     this.setState({
       [name]: value
-    });
+    })
+    
+      this.handlePriceChange();
 
-    this.handlePriceChange();
   };
+
+  // updatePrice = () => {
+  //   console.log(this);
+  //   this.handleInputChange()
+  //     .then(price => {
+  //       this.handlePriceChange();
+  //     })
+  // }
+
+
 
   // handleBooksChange = event => {
   //   const { name, value } = event.target;
