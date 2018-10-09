@@ -11,7 +11,6 @@ export default class Pricing extends Component {
   state = {
     pages: 0,
     books: 0,
-    rate: 0.00,
     total: total
   }
 
@@ -19,18 +18,22 @@ export default class Pricing extends Component {
     total = 0;
     let pages = this.state.pages;
     let books = this.state.books;
-    let rate = this.state.rate;
+    let rate = 0;
 
     console.log(pages, books, rate, total);
 
     if (pages > 249) {
-      this.setState({ rate: 0.06 });
+      rate = 0.06;
+      console.log(rate);
     } else if (pages > 100 && pages < 250) {
-      this.setState({ rate: 0.08 });
+      rate = 0.08;
+      console.log(rate);
     } else if (pages < 101) {
-      this.setState({ rate: 0.1 });
+      rate = 0.1;
+      console.log(rate);
     } else {
-      this.setState({ rate: 0.00 });
+      rate = 0;
+      console.log(rate);
     }
 
     total = (pages * rate + 2.5) * books;
@@ -46,9 +49,11 @@ export default class Pricing extends Component {
 
     this.setState({
       [name]: value
-    })
-    
+    }, function () {
       this.handlePriceChange();
+    });
+
+
 
   };
 
