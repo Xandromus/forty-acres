@@ -34,6 +34,13 @@ export default class Pricing extends Component {
       pages = parseInt(pages, 10) + 1;
     }
 
+    if (pages > 400) {
+      pages = 400;
+      this.setState({
+        pages: 400
+      })
+    }
+
     if (pages > 0) {
       total = (pages * rate + 2.5) * books;
     }
@@ -64,6 +71,7 @@ export default class Pricing extends Component {
               <label htmlFor="pages"># of pages</label>
               <Input
                 type="number"
+                min="0"
                 className="form-control d-inline-block"
                 name="pages"
                 id="pages"
@@ -75,6 +83,7 @@ export default class Pricing extends Component {
               <label htmlFor="pages"># of books</label>
               <Input
                 type="number"
+                min="0"
                 className="form-control d-inline-block"
                 name="books"
                 id="books"
