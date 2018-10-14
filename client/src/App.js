@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
 import About from "./pages/About";
+import Admin from "./pages/Admin";
 import Books from "./pages/Books";
 import Contact from "./pages/Contact";
 import Detail from "./pages/Detail";
@@ -20,6 +21,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={About} />
               <Route exact path="/about" component={About} />
+              <Route exact path="/admin" component={Admin} />
               <Route exact path="/books" component={Books} />
               <Route exact path="/books/:id" component={Detail} />
               <Route exact path="/pricing" component={Pricing} />
