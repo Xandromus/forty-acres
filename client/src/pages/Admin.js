@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import API from "../utils/API";
+import API from "../utils/API.js";
 import { Link } from "react-router-dom";
 import { Input } from 'reactstrap';
 import "../styles/Admin.css";
@@ -48,57 +48,60 @@ export default class Admin extends Component {
   render() {
     return (
       <div className="admin">
-      <div className="middle my-3 container">
-      <div className="row">
-        <div className="div-md-6">
-          <form>
-            <Input
-              value={this.state.title}
-              onChange={this.handleInputChange}
-              name="title"
-              placeholder="Title (required)"
-            />
-            <Input
-              value={this.state.author}
-              onChange={this.handleInputChange}
-              name="author"
-              placeholder="Author (required)"
-            />
-            <Input
-              type="textarea"
-              value={this.state.synopsis}
-              onChange={this.handleInputChange}
-              name="synopsis"
-              placeholder="Synopsis (Optional)"
-            />
-            <button
-              disabled={!(this.state.author && this.state.title)}
-              onClick={this.handleFormSubmit}
-            >
-              Submit Book
+        <div className="middle my-3 container">
+          <div className="row">
+            <div className="div-md-6">
+              <form>
+                <Input
+                  className="book-input"
+                  value={this.state.title}
+                  onChange={this.handleInputChange}
+                  name="title"
+                  placeholder="Title (required)"
+                />
+                <Input
+                  className="book-input"
+                  value={this.state.author}
+                  onChange={this.handleInputChange}
+                  name="author"
+                  placeholder="Author (required)"
+                />
+                <Input
+                  className="book-input"
+                  type="textarea"
+                  value={this.state.synopsis}
+                  onChange={this.handleInputChange}
+                  name="synopsis"
+                  placeholder="Synopsis (Optional)"
+                />
+                <button
+                  disabled={!(this.state.author && this.state.title)}
+                  onClick={this.handleFormSubmit}
+                >
+                  Submit Book
               </button>
-          </form>
+              </form>
+            </div>
+            <div className="col-md-6 col-sm-12">
+              {this.state.books.length ? (
+                <ul>
+                  {this.state.books.map(book => (
+                    <li key={book._id}>
+                      <Link to={"/books/" + book._id}>
+                        <strong>
+                          {book.title} by {book.author}
+                        </strong>
+                      </Link>
+                      <button onClick={() => this.deleteBook(book._id)} />
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                  <h3>No Results to Display</h3>
+                )}
+            </div>
+          </div>
         </div>
-        <div className="col-md-6 col-sm-12">
-            {this.state.books.length ? (
-              <ul>
-                {this.state.books.map(book => (
-                  <li key={book._id}>
-                    <Link to={"/books/" + book._id}>
-                      <strong>
-                        {book.title} by {book.author}
-                      </strong>
-                    </Link>
-                    <button onClick={() => this.deleteBook(book._id)} />
-                  </li>
-                ))}
-              </ul>
-            ) : (
-              <h3>No Results to Display</h3>
-            )}
-          </div>
-          </div>
-          </div>
       </div>
     )
   }
