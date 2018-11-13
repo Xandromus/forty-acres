@@ -3,3 +3,24 @@
     margin: 10px auto;
     padding: 10px!important;
 }
+
+a {
+    color: #3C787E;
+}
+
+a:hover {
+    color: #b66612;
+    text-decoration: none;
+}
+
+.delbtn {
+    margin-left: 5px;
+    color: #b66612;
+    cursor: pointer;
+    font-size: 14pt;
+}
+
+.delbtn:hover {
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}

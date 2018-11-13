@@ -98,8 +98,7 @@ export default class Admin extends Component {
                           {book.title} by {book.author}
                         </strong>
                       </Link>
-                      <button onClick={() => this.deleteBook(book._id)}>
-                      X</button>
+                      <i className="delbtn fa fa-trash" onClick={() => this.deleteBook(book._id)}></i>
                     </li>
                   ))}
                 </ul>

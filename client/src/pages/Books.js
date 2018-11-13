@@ -30,14 +30,11 @@ export default class Books extends Component {
       <div className="books">
 <div className="middle my-3 container">
           <div className="row">
-            <div className="div-md-6">
-              
-            </div>
-            <div className="col-md-6 col-sm-12">
+            <div className="col-12">
               {this.state.books.length ? (
                 <ul>
                   {this.state.books.map(book => (
-                    <li key={book._id}>
+                    <li className="text-left" key={book._id}>
                       <Link to={"/books/" + book._id}>
                         <strong>
                           {book.title} by {book.author}

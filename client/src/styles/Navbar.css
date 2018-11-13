@@ -15,6 +15,7 @@
 
 .nav-item:hover {
     background-color: #b66612;
+    transition: all .1s ease-in-out;
 }
 
 .nav-link {
