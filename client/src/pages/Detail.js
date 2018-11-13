@@ -24,16 +24,27 @@ export default class Detail extends Component {
               <h1>
                 {this.state.book.title} by {this.state.book.author}
               </h1>
+              
+            </div>
+          </div>
+          <div className="row">
+            <div className="div-md-6">
+              <img className="book-image" src={this.state.book.imageLink} />
             </div>
           </div>
           <div className="row">
             <div className="div-md-6">
               <article>
-                <h1>Synopsis</h1>
-                <p>
+                <h2 className="text-left">Synopsis:</h2>
+                <p className="text-left synopsis-text">
                   {this.state.book.synopsis}
                 </p>
               </article>
+            </div>
+          </div>
+          <div className="row">
+            <div className="div-md-6">
+            <a href={this.state.book.link} target="_blank">Buy</a>
             </div>
           </div>
           <div className="row">

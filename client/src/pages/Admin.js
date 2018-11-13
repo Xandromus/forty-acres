@@ -10,7 +10,9 @@ export default class Admin extends Component {
     books: [],
     title: "",
     author: "",
-    synopsis: ""
+    synopsis: "",
+    link: "",
+    imageLink: ""
   };
 
   componentDidMount() {
@@ -20,7 +22,7 @@ export default class Admin extends Component {
   loadBooks = () => {
     API.getBooks()
       .then(res =>
-        this.setState({ books: res.data, title: "", author: "", synopsis: "" })
+        this.setState({ books: res.data, title: "", author: "", synopsis: "", link: "", imageLink: "" })
       )
       .catch(err => console.log(err));
   };
@@ -44,7 +46,9 @@ export default class Admin extends Component {
       API.saveBook({
         title: this.state.title,
         author: this.state.author,
-        synopsis: this.state.synopsis
+        synopsis: this.state.synopsis,
+        link: this.state.link,
+        imageLink: this.state.imageLink
       })
         .then(res => this.loadBooks())
         .catch(err => console.log(err));
@@ -79,6 +83,20 @@ export default class Admin extends Component {
                   onChange={this.handleInputChange}
                   name="synopsis"
                   placeholder="Synopsis (Optional)"
+                />
+                <Input
+                  className="book-input"
+                  value={this.state.link}
+                  onChange={this.handleInputChange}
+                  name="link"
+                  placeholder="Link to book"
+                />
+                <Input
+                  className="book-input"
+                  value={this.state.imageLink}
+                  onChange={this.handleInputChange}
+                  name="imageLink"
+                  placeholder="Link to image"
                 />
                 <button
                   disabled={!(this.state.author && this.state.title)}

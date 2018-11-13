@@ -1,3 +1,11 @@
 h1 {
     color: #b66612;
 }
+
+.synopsis-text {
+    font-size: 12pt;
+}
+
+.book-image {
+    max-width: 200px;
+}
