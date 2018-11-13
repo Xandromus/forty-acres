@@ -25,6 +25,12 @@ export default class Admin extends Component {
       .catch(err => console.log(err));
   };
 
+  deleteBook = id => {
+    API.deleteBook(id)
+      .then(res => this.loadBooks())
+      .catch(err => console.log(err));
+  };
+
   handleInputChange = event => {
     const { name, value } = event.target;
     this.setState({
@@ -92,7 +98,8 @@ export default class Admin extends Component {
                           {book.title} by {book.author}
                         </strong>
                       </Link>
-                      <button onClick={() => this.deleteBook(book._id)} />
+                      <button onClick={() => this.deleteBook(book._id)}>
+                      X</button>
                     </li>
                   ))}
                 </ul>
